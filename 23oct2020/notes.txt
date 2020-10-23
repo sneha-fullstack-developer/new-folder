@@ -1,0 +1,155 @@
+HTML Blocks:
+
+There are 2 types of blocks in html.
+
+HTML elements are categorized in to 2 types.
+
+1. block level elements :
+
+Any element that starts in a new line and occupies the complete width, 
+then it is known as block level element.
+
+ex:  <p>, <h1>,<h2>.......
+
+
+<html>
+    <head>
+
+    </head>
+
+      <body>
+
+
+         <h1>This is Header -1</h1>
+
+         <h1 style="background-color: red">This is header -2</h1>
+
+          <p style="background-color: red">This is a paragraph</p>
+
+      </body>
+</html>
+
+
+2. inline elements:
+
+Any element that starts in the same line and occupies only the 
+content level width.
+
+<html>
+    <head>
+
+    </head>
+
+     <body>
+
+        <!--span -->
+
+        <span style="background-color: red">This is a span element 1</span> <br>
+        <span>This is a span element 2</span>
+        <span>This is a span element 3</span>
+
+        <!--anchor tag-->
+
+         <a href="abc">Home</a>
+         <a href="abc">Login</a>
+         <a href="abc">Register</a>
+
+          <!--input field-->
+
+          Username:<input type="text">
+          Password: <input type="password">
+
+     </body>
+</html>
+
+
+id: id is used to add an unique identifier to an html element.
+
+<html>
+    <head>
+
+    </head>
+
+     <body>
+
+        Username: <input type="text" id="username"> <span id="message"></span>
+
+      
+          <button onclick="display()">Submit</button>
+
+           <script>
+           
+                 function display(){
+                     event.preventDefault();
+                     var username=document.getElementById('username').value;
+                     console.log(username);
+                     document.getElementById('message').innerHTML="entered username is "+username;
+                 }
+
+           </script>
+
+     </body>
+</html>
+
+
+classes:
+
+classes are used with css to group a list of html elements to have same css.
+
+<html>
+    <head>
+
+
+        <style>
+        
+             .redcolor{
+                 color:red
+             }
+
+             .center{
+                 text-align: center
+             }
+
+             .left{
+                 text-align: left
+             }
+
+             .right{
+                 text-align: right
+             }
+
+             .greencolor{
+                 color:green
+             }
+        
+        </style>
+
+    </head>
+
+     <body>
+
+          <h1 class="redcolor center">This is a header h1</h1>
+
+          <h2 class="greencolor center">This is a header h2</h2>
+
+          <p>This is a simple paragraph</p>
+
+           <label>This is a label</label>
+
+
+     </body>
+</html>
+
+
+Tables:
+
+Problem Statement:
+
+IPLScore.com is a website that provides the summary of the match 
+along with the team performance details in the form of a table.
+
+use html tables and create a table , show the players details.
+
+
+
+

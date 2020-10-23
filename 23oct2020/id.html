@@ -1,0 +1,24 @@
+<html><head>
+
+</head>
+
+ <body>
+
+    Username: <input type="text" id="username"> <span id="message"></span>
+
+  
+      <button onclick="display()">Submit</button>
+
+       <script>
+       
+             function display(){
+                 event.preventDefault();
+                 var username=document.getElementById('username').value;
+                 console.log(username);
+                 document.getElementById('message').innerHTML="entered username is "+username;
+             }
+
+       </script>
+
+ 
+</body></html>
